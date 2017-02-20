@@ -1,0 +1,32 @@
+{
+  "name": "node-twiddle",
+  "version": "1.0.0",
+  "description": "Generate all combinations of `k` out of `n` objects",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lamphamsy/node-twiddle.git"
+  },
+  "author": "Lam Pham Sy",
+  "bugs": {
+    "url": "https://github.com/lamphamsy/node-twiddle/issues"
+  },
+  "homepage": "https://github.com/lamphamsy/node-twiddle#readme",
+  "keywords": [
+    "twiddle",
+    "combination"
+  ],
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.0.0",
+    "eslint-config-scality": "scality/Guidelines",
+    "mocha": "^3.1.2"
+  },
+  "scripts": {
+    "clean": "rm -rf ./node_modules ./build",
+    "ft_test": "mocha tests/functional/*.js",
+    "lint": "eslint $(git ls-files '*.js')",
+    "lint_md": "mdlint $(git ls-files '*.md')",
+    "re": "rm -rf ./node_modules ./build; npm install"
+  }
+}
